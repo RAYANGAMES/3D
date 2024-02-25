@@ -261,6 +261,16 @@ window.onload = function(){
     renderer.setSize(window.innerWidth, window.innerHeight);
   }, false);
 }
+    document.addEventListener('keydown', function(event) {
+  if (event.key === 'F11') {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      document.documentElement.requestFullscreen();
+    }
+  }
+});
+
 /*//////////////////////////*/
 
 "★"; //Patrick says hi.</script>
